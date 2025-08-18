@@ -1,0 +1,925 @@
+@import "sass/variables";
+@import "sass/global";
+@import "sass/spinner";
+
+$black-color: #000;
+$elem-radius: 50px;
+$color-orange: #f86f15;
+
+// This is for the Booking Pages //
+.booking-car-section {
+  .booking-start-info {
+    div {
+      p {
+        text-align: start;
+        font-size: 1.3rem;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  .booking-details-form {
+    h4 {
+      text-align: center;
+      // margin-top: 20px;
+      margin-bottom: 10px;
+
+      span {
+        color: black;
+        padding: 15px;
+        font-size: 2rem;
+        transition: 0.5s;
+        cursor: pointer;
+        margin-top: 0;
+        display: block;
+        font-weight: bold;
+        // &:hover{
+        // 	width: 100%;
+        // 	display: block;
+        // }
+      }
+
+      i {
+        content: "\f1b9";
+        font-size: 1.8rem;
+        margin: 0 4px 0 0;
+      }
+    }
+
+    .cs-field {
+      width: 100%;
+
+      label {
+        width: 100%;
+      }
+    }
+
+    input[type="date"] {
+      color: $placeHolderColor;
+    }
+
+    .cs-button-wrapper {
+      justify-content: right;
+      margin-top: 40px;
+
+      button {
+        width: fit-content;
+      }
+
+      .cs-primary-button {
+        margin-left: 0.5rem;
+        min-width: 200px;
+        padding: 13px;
+        font-weight: 600;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .booking-pay-summary {
+    .bg-h4 {
+      text-align: center;
+      color: black;
+      margin-bottom: 5px;
+      padding: 0px;
+      font-size: 4.5vw;
+    }
+
+    .bg-h4 + p {
+      text-align: center;
+    }
+
+    .booking-summary {
+      border: 1px solid black;
+
+      .summary-heading-parent {
+        background-color: black;
+        padding: 0.75rem 0.5rem;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+      }
+
+      .cs-summary-item {
+        padding: 1rem 0;
+
+        .summary-heading {
+          width: 50%;
+          padding: 0.5rem 0.25rem;
+          //background-color: wheat;
+          font-size: 1rem;
+          font-weight: 600;
+
+          &:last-of-type {
+            text-align: right;
+          }
+        }
+      }
+
+      div {
+        border-bottom: 1px solid grey;
+        padding: 0.25rem 0;
+
+        span {
+          width: 50%;
+          display: inline-block;
+          min-height: 10px;
+          min-width: fit-content;
+        }
+
+        .summary-field {
+          padding-left: 1rem;
+        }
+
+        .summary-value {
+          padding-left: 1rem;
+          text-align: right;
+          width: fit-content;
+          float: right;
+        }
+
+        &:nth-last-of-type(2),
+        &:first-of-type {
+          border-bottom: none;
+        }
+
+        &:last-of-type {
+          border-top: 2px solid black;
+          border-bottom: 2px solid black;
+          font-weight: 700;
+          //margin-top: 0.5rem;
+        }
+      }
+    }
+
+    .booking-payment {
+      margin-top: 50px;
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      .cs-payment-option {
+        .cs-field {
+          width: 100%;
+          margin-bottom: 0.75rem;
+
+          label {
+            width: 100%;
+
+            input {
+              width: 100%;
+            }
+          }
+
+          .card-img-wrapper {
+            svg {
+              width: 60px;
+              height: 45px;
+              scale: 0.8;
+
+              &:nth-of-type(2) {
+                height: 47px;
+                width: 49px;
+              }
+
+              &:nth-of-type(3) {
+                width: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .thank-you-page {
+    .cs-thank-you-card {
+      margin: auto;
+      min-height: 450px;
+      height: 50vh;
+      display: flex;
+      max-width: 800px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+
+      .image-wrapper {
+        margin-bottom: 1rem;
+
+        svg {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .content-wrapper {
+        margin-bottom: 1rem;
+        text-align: center;
+
+        p {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+
+      .button-wrapper {
+        margin-bottom: 1rem;
+        text-align: center;
+
+        .cs-primary-button {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}
+
+.row_guests_and_cars {
+  margin-top: 40px;
+}
+
+.row_first {
+  margin-top: 20px;
+}
+
+// .coupon_wrap {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+.coupon_wrap .cs-field {
+  margin-bottom: 0px;
+}
+
+.coupon_wrap .cs-field label {
+  margin-bottom: 0;
+}
+
+.coupon_wrap button {
+  height: 52px;
+  background-color: #000;
+  color: white;
+}
+
+.coupon_wrap button:hover {
+  border: 1px solid #000;
+  color: black;
+  background-color: transparent;
+}
+
+.cs_coupon_applied {
+  background-color: #7cfc00 !important;
+  color: #000 !important;
+}
+
+.cs-coupon-success,
+.cs-coupon-invalid {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #2bc48a;
+  max-height: 60px;
+  justify-content: space-between;
+
+  .cs-coupon-left {
+    display: flex;
+    align-items: center;
+
+    .icon-wrapper {
+      margin: 0 1rem;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .content-wrapper {
+      padding-right: 3rem;
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+
+        span {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        &:last-child {
+          font-size: 14px;
+
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+table.tbl-booking-summary {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tbl-booking-summary td,
+.tbl-booking-summary th {
+  border: 1px solid #f6f6f6;
+  text-align: left;
+  padding: 12px 20px;
+}
+
+.tbl-booking-summary tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+.tbl-booking-summary {
+  th {
+    color: white;
+    background-color: black;
+  }
+}
+
+.payment-wrap {
+  label {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.cs-custom-select {
+  border-color: black;
+  border-radius: initial;
+}
+
+.para_car_available {
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.btn_wrap {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+
+  button {
+    margin-top: 20px;
+  }
+}
+
+.cs_black_heading {
+  color: black;
+  padding: 15px 0px;
+  text-align: left !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+}
+
+.booking-car-section {
+  width: 95%;
+  margin: auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.cs-coupon-invalid {
+  border-color: red;
+
+  .cs-coupon-left {
+    .content-wrapper {
+      p {
+        color: red !important;
+        font-size: 16px !important;
+
+        span {
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+}
+
+.cs-car {
+  .card_wrap {
+    padding: 30px 25px;
+    border-radius: 0;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid black;
+
+    &:hover {
+      border: 1px solid rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+.protection_wrap {
+  display: flex;
+  gap: 15px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding: 30px 20px;
+  flex-direction: column;
+  text-align: center;
+
+  img {
+    max-width: initial !important;
+    width: 120px;
+  }
+}
+
+.template-protection {
+  label {
+    cursor: pointer;
+    // min-height: 400px;
+    transition: 0.3s;
+    // border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-bottom: 15px;
+
+    .cost {
+      font-size: 28px;
+    }
+  }
+
+  .protection-row {
+    label:hover {
+      border: 1px solid black;
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+  }
+
+  input[type="radio"]:checked + label {
+    border: 1px solid black;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+}
+
+.cs-button-outline {
+  background: transparent;
+  border: 1px solid black;
+  // border-radius: 25px;
+  color: black;
+  // font-weight: bold;
+  padding: 0.8rem 1.5rem;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.desc_wrap {
+  p {
+    font-size: 1.2rem;
+    margin-left: 5px;
+  }
+}
+
+.template-protection {
+  h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    position: relative;
+
+    // &::after {
+    // 	content: "";
+    // 	position: absolute;
+    // 	bottom: -10px;
+    // 	width: 80px;
+    // 	height: 2px;
+    // 	left: 50%;
+    // 	transform: translateX(-50%);
+    // 	background-color: #000;
+    // }
+  }
+
+  .sub_head {
+    max-width: 500px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -15px;
+    margin-bottom: 4rem;
+  }
+}
+
+.checkbox-wrap {
+  input {
+    width: auto !important;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  label {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+.cs-arrow-circle {
+  padding: 16px;
+  border: none;
+  font-size: 1rem;
+  min-width: 40px;
+  width: 80px !important;
+  background: black;
+
+  &:hover {
+    background-color: black;
+  }
+}
+
+// Style for yellow car on first page
+
+.booking-details-form {
+  .booking-title-wrap {
+    margin-top: 40px;
+  }
+
+  .date-title {
+    font-weight: 600;
+  }
+
+  .cs-location-wrap {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 40px;
+
+    padding: 0;
+    overflow: hidden;
+
+    .img-wrap {
+      background-color: #d3eaf9;
+      width: 300px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border-radius: 40px;
+
+      img {
+        width: 75%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .desc-wrap {
+      padding: 20px 30px;
+
+      .cs-title {
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      p {
+        line-height: 1;
+      }
+
+      .cs-address {
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .cs-car {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.cs-car-detail {
+  span {
+    font-size: 16px;
+  }
+
+  .sp {
+    border-right: 1px solid rgba(0, 0, 0, 0.6);
+    margin-right: 12px;
+    padding-right: 12px;
+  }
+}
+
+.cs_black_heading {
+  margin-bottom: 5px !important;
+}
+
+.summary-card {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.pickup-wrap {
+  .location {
+    i {
+      margin-right: 7px;
+    }
+  }
+}
+
+.drop-wrap {
+  .location {
+    i {
+      margin-right: 7px;
+    }
+  }
+}
+
+#secPayment {
+  .container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+.cs-car-detail {
+  margin-top: 20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+
+  .elem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg {
+    width: 23px;
+    text-align: center;
+  }
+}
+
+.cs-car-detail {
+  display: flex;
+}
+
+.time-slot-col {
+  position: relative;
+}
+
+.time-slots-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 50%;
+  z-index: 10;
+  padding: 15px 10px;
+  border-radius: 5px;
+  overflow: scroll;
+  max-height: 300px;
+
+  .time-wrap {
+    padding: 4px;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(50% - 10px);
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+.total-price {
+  font-weight: bold;
+}
+
+.cs-field-country-code {
+  border: 1px solid black;
+  padding: 5px 2px;
+}
+
+.sec-payment {
+  padding: 10px 10px;
+}
+
+.sec-payment .container .title {
+  font-weight: bold;
+}
+
+.title-driver {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.col-content {
+  margin-bottom: 20px;
+}
+
+.booking-payment {
+  margin-top: 20px;
+}
+
+.checkbox-wrapper-33 {
+  margin-top: 7px;
+}
+
+.cs-higlighted {
+  color: $color-orange !important;
+  font-size: 20px !important;
+}
+
+.protection-included {
+  color: $color-orange !important;
+
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+
+.cs-title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cs-wrap-back {
+  i {
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+.fa-charging-station {
+  font-size: 20px;
+}
+
+.plan-content {
+  font-style: initial;
+}
+
+#cs_page_TemplateCar .cs-title-wrap {
+  max-width: 550px;
+  margin: auto;
+}
+
+.cs-text-mini {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+/**
+*	Code for mobile devices
+*/
+
+@media (max-width: 768px) {
+  .sec-payment {
+    .basic-plan {
+      padding-bottom: 0;
+    }
+
+    .plans {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .sec-driver {
+    padding: 0 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  #secDriver {
+    .col-md-5 {
+      padding: 0 !important;
+    }
+  }
+
+  .protection-row {
+    flex-direction: column;
+    padding: 10px 25px;
+  }
+
+  .summary-wrap {
+    padding: 0px 25px;
+  }
+
+  .summary-card {
+    padding: 20px 20px 30px 20px;
+  }
+
+  // #summaryLeft {
+  // 	padding-right: 0 !important;
+  // }
+
+  .wrap-car-detail {
+    span {
+      display: none;
+    }
+  }
+
+  .sec-payment {
+    .cs-body {
+      padding: 10px 15px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .col-md-6 {
+      // padding-right: 0;
+      // padding-left: 0;
+    }
+  }
+
+  .booking-car-section .booking-details-form h4 span {
+    font-size: 24px;
+  }
+
+  .booking-car-section .booking-details-form h4 i {
+    font-size: 1.3rem;
+  }
+
+  .sec-payment .cs-body {
+    padding: 0 10px;
+  }
+
+  .cs-car-detail span {
+    font-size: 10px;
+  }
+
+  .cs-car-detail svg {
+    width: 20px;
+  }
+
+  .fa-charging-station {
+    font-size: 17px;
+  }
+
+  .cs-location-wrap .desc-wrap {
+    margin-bottom: 10px;
+  }
+
+  .booking-details-form .cs-location-wrap .desc-wrap .cs-title {
+    font-size: 20px;
+  }
+
+  .template-car-btns .col-md-12 {
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-wrap {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  #SummaryWrap .desc-wrap {
+    padding: 0;
+  }
+
+  .title-template-protection {
+    font-size: 1.7rem;
+  }
+
+  .cs-title-wrap {
+    margin-bottom: 15px;
+  }
+
+  #summaryLeft {
+    position: initial;
+  }
+
+  .cs-thank-you-card h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+
+// Mobile View Ends
+
+.dates-bg {
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.text-disclaimer {
+  font-size: 14px !important;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 30px;
+}

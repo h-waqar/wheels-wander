@@ -1,0 +1,5 @@
+name: vopam
+email: vopam39824@cubene.com
+public_user_name: vopam_2
+pass: aw3yjZ'&mARBG'3
+country: vopam

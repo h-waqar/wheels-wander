@@ -1,0 +1,12 @@
+first page car design 
+page two check every thing completely
+responsive test of first two pages
+page three validation 
+page three responsive test
+driver page responsive test
+driver page validation
+summary page creation
+implement pay now and pay later logic
+test the backend fields saving
+test the emails
+test the whole plugin

@@ -1,0 +1,21 @@
+{
+    "name": "etechlogics/etl-participant-score",
+    "description": "Wordpress plugin to to allow judges to rate the participant performance",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "EtlParticipantScore\\": "/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "authors": [
+        {
+            "name": "Etechlogics",
+            "email": "admin@Etechlogics.com"
+        }
+    ],
+    "require": {}
+}

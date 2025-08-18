@@ -1,0 +1,1812 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+.cs-invalid {
+  background: pink;
+}
+
+.cs-error-text,
+.cs-success-text {
+  font-size: 12px;
+}
+
+.cs-error-text {
+  color: red;
+}
+
+.cs-success-text {
+  color: green;
+}
+
+section.alert_ValidPassport {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+}
+section.alert_ValidPassport .cs-container {
+  height: auto;
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  overflow-y: scroll;
+  max-height: 80vh;
+  max-width: 500px;
+}
+section.alert_ValidPassport .cs-container .cs-alert-danger {
+  max-width: 800px;
+  min-width: 300px;
+  width: 100%;
+  display: inline-block;
+}
+section.alert_ValidPassport .cs-container .cs-alert-danger .icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 1rem auto 1rem auto;
+}
+section.alert_ValidPassport .cs-container .cs-alert-danger .content-wrapper {
+  padding: 0 2rem;
+}
+section.alert_ValidPassport .cs-container .cs-alert-danger .cs-button-wrapper {
+  margin-top: 15px;
+}
+section.alert_ValidPassport .cs-container .cs-alert-danger .cs-button-wrapper span {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+}
+section.alert_ValidPassport .cs-container .cs-alert-danger .cs-button-wrapper span:hover {
+  background-color: #bf9b30;
+}
+
+.cs-hidden {
+  display: none !important;
+}
+
+.cs-primary-button,
+.cs-secondary-button {
+  color: #fff;
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+  background-color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cs-primary-button:hover,
+.cs-secondary-button:hover {
+  background-color: #000;
+  color: white;
+}
+
+.cs-button-outline {
+  color: #000;
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+  background: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cs-secondary-button {
+  background-color: #bbbbbb;
+}
+
+.cs-button-wrapper {
+  display: flex;
+  align-items: end;
+}
+
+.cs-field {
+  margin-bottom: 0.5rem;
+}
+.cs-field .lbl {
+  margin-left: 3px;
+}
+.cs-field label .input_wrap {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid rgb(0, 0, 0);
+  align-items: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  margin-top: 4px;
+}
+.cs-field label .icon_wrap {
+  padding: 0 15px;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 20px;
+}
+.cs-field label i {
+  color: rgba(0, 0, 0, 0.9);
+}
+.cs-field label input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 1px;
+  transition: all ease 0.5s;
+  font-size: 0.9rem;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 5px;
+  padding-left: 20px;
+}
+.cs-field label input:focus, .cs-field label input:focus-visible {
+  border: 1px solid rgb(0, 0, 0);
+  outline: none;
+}
+.cs-field label input::-moz-placeholder {
+  color: rgb(0, 0, 0);
+}
+.cs-field label input::placeholder {
+  color: rgb(0, 0, 0);
+}
+.cs-field label .cs-secondary-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  margin-top: 0.25rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border: none;
+}
+
+.cs-custom-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.cs-custom-select:focus {
+  border-radius: 10px 0 10px 0;
+  border: 1px solid #ffc400;
+}
+
+.cs-md-6px {
+  margin-left: 6px;
+}
+
+.booking-details-form label {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.cs-field select {
+  height: 100%;
+  border: none;
+  background: transparent;
+  padding-right: 10px;
+  margin-right: 15px;
+}
+.cs-field :focus {
+  border: none;
+}
+.cs-field label {
+  font-style: initial;
+}
+
+.template-car .para {
+  text-align: center;
+}
+
+.row_car {
+  display: flex;
+  justify-content: center;
+}
+.row_car .car-container {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  padding: 40px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 550px;
+}
+.row_car .car-container .title {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+.row_car .car-container .desc {
+  color: black;
+}
+.row_car .car-container .price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f86f15;
+}
+.row_car .car-container .des_wrap {
+  padding: 0 15px;
+}
+.row_car .car-container .desc_wrap {
+  margin-top: 20px;
+}
+
+.template-car-btns {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.temp-driver .para {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.temp-driver .row-flex {
+  display: flex;
+  justify-content: center;
+}
+.temp-driver img {
+  width: 100%;
+}
+.temp-driver .lbl-driver {
+  overflow: hidden;
+  border: 1px solid rgb(0, 0, 0);
+}
+.temp-driver .btns_wrap {
+  display: flex;
+  justify-content: center;
+}
+.temp-driver label {
+  min-height: 10px !important;
+  width: 100%;
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.temp-driver input[type=checkbox]:checked + label {
+  color: white;
+  background-color: black;
+}
+
+.pay-now-later label {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 20px;
+  min-height: 400px;
+  cursor: pointer;
+}
+.pay-now-later input[type=radio]:checked + label {
+  border: 1px solid black;
+}
+
+.cs-body {
+  padding: 5px 40px 30px 40px;
+}
+
+.protection-row .cs-col {
+  padding: 0;
+}
+
+.cs-heading {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 0.5rem 0;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.cs-heading::after {
+  content: "";
+  color: black;
+}
+
+.protection-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.protection-row label {
+  flex: 1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-wrapper-33 {
+  --s-xsmall: 0.625em;
+  --s-small: 1.2em;
+  --border-width: 1px;
+  --c-primary: #5f11e8;
+  --c-primary-20-percent-opacity: rgb(95 17 232 / 20%);
+  --c-primary-10-percent-opacity: rgb(95 17 232 / 10%);
+  --t-base: 0.4s;
+  --t-fast: 0.2s;
+  --e-in: ease-in;
+  --e-out: cubic-bezier(0.11, 0.29, 0.18, 0.98);
+}
+
+.checkbox-wrapper-33 .visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.checkbox-wrapper-33 .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.checkbox-wrapper-33 .checkbox + .checkbox {
+  margin-top: var(--s-small);
+}
+
+.checkbox-wrapper-33 .checkbox__symbol {
+  display: inline-block;
+  display: flex;
+  margin-right: calc(var(--s-small) * 0.7);
+  border: var(--border-width) solid var(--c-primary);
+  position: relative;
+  border-radius: 0.1em;
+  width: 1.5em;
+  height: 1.5em;
+  transition: box-shadow var(--t-base) var(--e-out), background-color var(--t-base);
+  box-shadow: 0 0 0 0 var(--c-primary-10-percent-opacity);
+}
+
+.checkbox-wrapper-33 .checkbox__symbol:after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: 0.25em;
+  height: 0.25em;
+  background-color: var(--c-primary-20-percent-opacity);
+  opacity: 0;
+  border-radius: 3em;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+}
+
+.checkbox-wrapper-33 .checkbox .icon-checkbox {
+  width: 1em;
+  height: 1em;
+  margin: auto;
+  fill: none;
+  stroke-width: 3;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  color: var(--c-primary);
+  display: inline-block;
+}
+
+.checkbox-wrapper-33 .checkbox .icon-checkbox path {
+  transition: stroke-dashoffset var(--t-fast) var(--e-in);
+  stroke-dasharray: 30px, 31px;
+  stroke-dashoffset: 31px;
+}
+
+.checkbox-wrapper-33 .checkbox__textwrapper {
+  margin: 0;
+}
+
+.checkbox-wrapper-33 .checkbox__trigger:checked + .checkbox__symbol:after {
+  animation: ripple-33 1.5s var(--e-out);
+}
+
+.checkbox-wrapper-33 .checkbox__trigger:checked + .checkbox__symbol .icon-checkbox path {
+  transition: stroke-dashoffset var(--t-base) var(--e-out);
+  stroke-dashoffset: 0px;
+}
+
+.checkbox-wrapper-33 .checkbox__trigger:focus + .checkbox__symbol {
+  box-shadow: 0 0 0 0.25em var(--c-primary-20-percent-opacity);
+}
+@keyframes ripple-33 {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale(20);
+  }
+}
+.protection_desc h3 {
+  font-style: initial;
+}
+.protection_desc p {
+  font-style: initial;
+  color: rgba(0, 0, 0, 0.9);
+  font-style: initial;
+  font-weight: normal;
+  margin-bottom: 0.4rem;
+}
+
+.driver-detail .cs-body {
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.driver-detail .col-wrap {
+  min-height: 500px;
+  padding: 0;
+}
+.driver-detail img {
+  width: 100%;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.driver-detail .img_wrap {
+  min-height: 500px;
+}
+.driver-detail .checkbox-wrap {
+  margin-top: 20px;
+}
+.driver-detail .col-content {
+  padding: 40px;
+}
+.driver-detail .title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: initial;
+}
+.driver-detail .cs-button-wrapper {
+  display: flex;
+  justify-content: right;
+  margin-top: 40px;
+}
+.driver-detail .cs-primary-button,
+.driver-detail .cs-secondary-button {
+  padding: 0.8rem 2rem;
+}
+
+/* VARS */
+/* MIXINS */
+/* STYLE THE HTML ELEMENTS (INCLUDES RESETS FOR THE DEFAULT FIELDSET AND LEGEND STYLES) */
+fieldset {
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  border: solid 1px #ccc;
+  min-width: 0;
+  background-color: #fff;
+}
+fieldset legend {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  width: 100%;
+  float: left;
+  display: table;
+  font-size: 1.5rem;
+  line-height: 140%;
+  font-weight: 600;
+  color: #333;
+}
+fieldset legend + * {
+  clear: both;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+
+/* TOGGLE STYLING */
+.toggle {
+  margin: 0 0 1.5rem;
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.toggle input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+.toggle input + label {
+  margin: 0;
+  padding: 0.75rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  transition: border-color 0.15s ease-out, color 0.25s ease-out, background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+  /* ADD THESE PROPERTIES TO SWITCH FROM AUTO WIDTH TO FULL WIDTH */
+  /*flex: 0 0 50%; display: flex; justify-content: center; align-items: center;*/
+  /* ----- */
+}
+.toggle input + label:first-of-type {
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+}
+.toggle input + label:last-of-type {
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+}
+.toggle input:hover + label {
+  border-color: #213140;
+}
+.toggle input:checked + label {
+  background-color: black;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-color: black;
+  z-index: 1;
+}
+.toggle input:focus + label {
+  outline: dotted 1px #ccc;
+  outline-offset: 0.45rem;
+}
+@media (max-width: 800px) {
+  .toggle input + label {
+    padding: 0.75rem 0.25rem;
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* STYLING FOR THE STATUS HELPER TEXT FOR THE DEMO */
+.status {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.status span {
+  font-weight: 600;
+  color: #b6985a;
+}
+.status span:first-of-type {
+  display: inline;
+}
+.status span:last-of-type {
+  display: none;
+}
+@media (max-width: 800px) {
+  .status span:first-of-type {
+    display: none;
+  }
+  .status span:last-of-type {
+    display: inline;
+  }
+}
+
+.toggle label {
+  width: 50%;
+  cursor: pointer;
+}
+
+.row-pay-now-later {
+  margin-top: 3rem;
+}
+
+.booking-pay-summary p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+.booking-pay-summary .cs-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.error-border {
+  border: 1px solid red !important;
+}
+
+.card-img-wrapper svg {
+  width: 40px;
+  height: 40px;
+}
+
+.thank-you-page {
+  display: flex;
+  justify-content: center;
+}
+.thank-you-page .cs-thank-you-card {
+  height: 100%;
+  max-width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 30px;
+  border-radius: 5px;
+}
+.thank-you-page .cs-thank-you-card .content-wrapper {
+  text-align: center;
+  padding-top: 20px;
+}
+.thank-you-page .cs-thank-you-card .button-wrapper {
+  text-align: center;
+}
+.thank-you-page .cs-thank-you-card svg {
+  width: 100%;
+  height: 200px;
+}
+
+.summary-card {
+  padding: 20px 30px;
+}
+.summary-card .car-detail {
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+}
+.summary-card .car-detail .img-wrap {
+  width: 50%;
+}
+.summary-card .car-detail .desc-wrap {
+  line-height: 0;
+}
+.summary-card .car-detail .desc-wrap .cs-title {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.summary-card .car-detail .desc-wrap .desc-wrap {
+  line-height: 0;
+  font-size: 20px;
+}
+.summary-card .car-detail .desc-wrap span {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.summary-card .days-wrap {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.summary-card .days-wrap p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.summary-card .days-wrap p i {
+  margin-right: 2px;
+}
+.summary-card .location-wrap {
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.summary-card .location-wrap .pickup-wrap {
+  line-height: 13px;
+  padding: 0 10px;
+}
+.summary-card .location-wrap .drop-wrap {
+  line-height: 13px;
+  padding: 0 10px;
+  margin-top: 1.8rem;
+}
+.summary-card .location-wrap .location {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.summary-card .cs-description {
+  margin-top: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+.summary-card .cs-description i {
+  margin-right: 5px;
+}
+.summary-card .cs-total .wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.summary-card .cs-total .wrap p {
+  font-size: 25px;
+}
+.summary-card .cs-total .wrap .total {
+  font-weight: bold;
+}
+.summary-card .price-detail {
+  color: #f86f15;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-summary-next {
+  width: 100%;
+  background: black;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.btn-summary-next i {
+  margin-left: 7px;
+}
+
+.sec-driver .driver-rate {
+  font-weight: bold;
+  font-size: 25px;
+}
+.sec-driver .protection_desc {
+  margin: 15px 0;
+  padding: 4px 0;
+}
+.sec-driver .lbl-driver {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.sec-driver .icon_wrap {
+  display: flex;
+  justify-content: center;
+}
+.sec-driver .icon_wrap img {
+  width: 80%;
+}
+.sec-driver h3 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.sec-driver p {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.sec-driver label:hover {
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.sec-driver input[type=checkbox]:checked + label {
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.sec-payment {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+  /* inspiration */
+}
+.sec-payment .plans {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sec-payment .plans .plan input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.sec-payment .plans .plan {
+  cursor: pointer;
+  width: 48.5%;
+}
+.sec-payment .plans .plan .plan-content {
+  display: flex;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: box-shadow 0.4s;
+  position: relative;
+  min-height: 200px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1) !important;
+}
+.sec-payment .plans .plan .plan-content img {
+  margin-right: 30px;
+  height: 72px;
+}
+.sec-payment .plans .plan .plan-details span {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252f42;
+}
+.sec-payment .container .title {
+  font-size: 20px;
+  font-weight: 500;
+  flex-basis: 100%;
+  color: #252f42;
+  margin-bottom: 20px;
+}
+.sec-payment .plans .plan .plan-details p {
+  color: #646a79;
+  font-size: 12px;
+  line-height: 18px;
+}
+.sec-payment .plans .plan .plan-content:hover {
+  box-shadow: 0px 3px 5px 0px #e8e8e8;
+}
+.sec-payment .plans .plan input[type=radio] + .plan-content:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  right: 20px;
+  top: 20px;
+  border-radius: 100%;
+  border: 4px solid #fff;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.sec-payment .plans .plan input[type=radio]:checked + .plan-content:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: black;
+  right: 20px;
+  top: 20px;
+  border-radius: 100%;
+  border: 4px solid #fff;
+  box-shadow: 0px 0px 0px 2px black;
+}
+.sec-payment .plans .plan input[type=radio]:checked + .plan-content {
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+@media screen and (max-width: 991px) {
+  .sec-payment .plans {
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    min-height: 200px;
+  }
+  .sec-payment .plans .plan {
+    width: 100%;
+  }
+  .sec-payment .plan.complete-plan {
+    margin-top: 20px;
+  }
+  .sec-payment .plans .plan .plan-content .plan-details {
+    width: 70%;
+    display: inline-block;
+  }
+  .sec-payment .plans .plan input[type=radio]:checked + .plan-content:after {
+    top: 45%;
+    transform: translate(-50%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .sec-payment .plans .plan .plan-content .plan-details {
+    width: 60%;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 540px) {
+  .sec-payment .plans .plan .plan-content img {
+    margin-bottom: 20px;
+    height: 56px;
+    transition: height 0.4s;
+  }
+  .sec-payment .plans .plan input[type=radio]:checked + .plan-content:after {
+    top: 20px;
+    right: 10px;
+  }
+  .sec-payment .plans .plan .plan-content .plan-details {
+    width: 100%;
+  }
+  .sec-payment .plans .plan .plan-content {
+    padding: 20px;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+.sec-payment .inspiration {
+  font-size: 12px;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 10px;
+  font-weight: 300;
+}
+.sec-payment .inspiration a {
+  color: #666;
+}
+@media screen and (max-width: 767px) {
+  .sec-payment {
+    /* inspiration */
+  }
+  .sec-payment .inspiration {
+    display: none;
+  }
+}
+
+.checkbox-wrapper-33 {
+  padding-left: 0 !important;
+}
+
+.sec-dialog i {
+  cursor: pointer;
+}
+.sec-dialog .border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+  margin-bottom: 5px;
+}
+.sec-dialog hr {
+  width: 100%;
+  height: 2px;
+  color: rgba(0, 0, 0, 0.1);
+}
+.sec-dialog .cs-total-head {
+  font-size: 22px;
+}
+.sec-dialog .cs-total {
+  font-size: 24px;
+  font-weight: bold;
+}
+.sec-dialog .total-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-dialog .cs-row {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-dialog .close-wrap {
+  display: flex;
+  justify-content: right;
+  font-size: 1.8rem;
+}
+.sec-dialog .sub-title {
+  text-align: left;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.sec-dialog .cs-container {
+  padding: 50px;
+}
+.sec-dialog .cs-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.sec-dialog .section.alert_ValidPassport .cs-container {
+  padding: 3rem !important;
+}
+
+.cs-field {
+  cursor: pointer;
+}
+.cs-field input {
+  cursor: pointer;
+}
+
+.template-car-btns .col-md-12 {
+  padding-right: 0 !important;
+  max-width: 550px;
+}
+
+#uiCarPerDayPrice {
+  margin-bottom: 0 !important;
+}
+
+.cs-button-wrapper {
+  padding-right: 40px;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .booking-details-form .cs-button-wrapper {
+    padding-right: 0;
+  }
+  .booking-details-form .cs-location-wrap {
+    flex-direction: column;
+  }
+  .booking-details-form .img-wrap {
+    width: 100% !important;
+  }
+  .booking-details-form .desc-wrap .cs-title {
+    font-size: 20px;
+  }
+  .booking-details-form .desc-wrap {
+    padding: 25px 30px;
+  }
+  .booking-details-form .cs-location-wrap {
+    padding-bottom: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .cs-md-6px {
+    margin: 0.5rem 0 0 0 !important;
+  }
+  .booking-car-section {
+    padding: 0 15px;
+  }
+  .cs-body {
+    padding: 0;
+  }
+  .car-container {
+    padding: 40px 20px;
+  }
+  .template-car-btns {
+    margin-top: 20px;
+  }
+}
+/* Style for the spinner wrapper */
+.spinner-wrapper {
+  opacity: 1 !important;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Style for the spinner animation */
+}
+.spinner-wrapper .spinner {
+  border: 4px solid white;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 0.8s linear infinite; /* Animation for the spinner */
+  /* Spinner animation keyframes */
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.booking-car-section .booking-start-info div p {
+  text-align: start;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+.booking-car-section .booking-details-form h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.booking-car-section .booking-details-form h4 span {
+  color: black;
+  padding: 15px;
+  font-size: 2rem;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 0;
+  display: block;
+  font-weight: bold;
+}
+.booking-car-section .booking-details-form h4 i {
+  content: "\f1b9";
+  font-size: 1.8rem;
+  margin: 0 4px 0 0;
+}
+.booking-car-section .booking-details-form .cs-field {
+  width: 100%;
+}
+.booking-car-section .booking-details-form .cs-field label {
+  width: 100%;
+}
+.booking-car-section .booking-details-form input[type=date] {
+  color: grey;
+}
+.booking-car-section .booking-details-form .cs-button-wrapper {
+  justify-content: right;
+  margin-top: 40px;
+}
+.booking-car-section .booking-details-form .cs-button-wrapper button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.booking-car-section .booking-details-form .cs-button-wrapper .cs-primary-button {
+  margin-left: 0.5rem;
+  min-width: 200px;
+  padding: 13px;
+  font-weight: 600;
+  border-radius: 0;
+}
+.booking-car-section .booking-pay-summary .bg-h4 {
+  text-align: center;
+  color: black;
+  margin-bottom: 5px;
+  padding: 0px;
+  font-size: 4.5vw;
+}
+.booking-car-section .booking-pay-summary .bg-h4 + p {
+  text-align: center;
+}
+.booking-car-section .booking-pay-summary .booking-summary {
+  border: 1px solid black;
+}
+.booking-car-section .booking-pay-summary .booking-summary .summary-heading-parent {
+  background-color: black;
+  padding: 0.75rem 0.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+.booking-car-section .booking-pay-summary .booking-summary .cs-summary-item {
+  padding: 1rem 0;
+}
+.booking-car-section .booking-pay-summary .booking-summary .cs-summary-item .summary-heading {
+  width: 50%;
+  padding: 0.5rem 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.booking-car-section .booking-pay-summary .booking-summary .cs-summary-item .summary-heading:last-of-type {
+  text-align: right;
+}
+.booking-car-section .booking-pay-summary .booking-summary div {
+  border-bottom: 1px solid grey;
+  padding: 0.25rem 0;
+}
+.booking-car-section .booking-pay-summary .booking-summary div span {
+  width: 50%;
+  display: inline-block;
+  min-height: 10px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.booking-car-section .booking-pay-summary .booking-summary div .summary-field {
+  padding-left: 1rem;
+}
+.booking-car-section .booking-pay-summary .booking-summary div .summary-value {
+  padding-left: 1rem;
+  text-align: right;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+}
+.booking-car-section .booking-pay-summary .booking-summary div:nth-last-of-type(2), .booking-car-section .booking-pay-summary .booking-summary div:first-of-type {
+  border-bottom: none;
+}
+.booking-car-section .booking-pay-summary .booking-summary div:last-of-type {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: 700;
+}
+.booking-car-section .booking-pay-summary .booking-payment {
+  margin-top: 50px;
+}
+.booking-car-section .booking-pay-summary .booking-payment h4 {
+  margin-bottom: 1rem;
+}
+.booking-car-section .booking-pay-summary .booking-payment .cs-payment-option .cs-field {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+.booking-car-section .booking-pay-summary .booking-payment .cs-payment-option .cs-field label {
+  width: 100%;
+}
+.booking-car-section .booking-pay-summary .booking-payment .cs-payment-option .cs-field label input {
+  width: 100%;
+}
+.booking-car-section .booking-pay-summary .booking-payment .cs-payment-option .cs-field .card-img-wrapper svg {
+  width: 60px;
+  height: 45px;
+  scale: 0.8;
+}
+.booking-car-section .booking-pay-summary .booking-payment .cs-payment-option .cs-field .card-img-wrapper svg:nth-of-type(2) {
+  height: 47px;
+  width: 49px;
+}
+.booking-car-section .booking-pay-summary .booking-payment .cs-payment-option .cs-field .card-img-wrapper svg:nth-of-type(3) {
+  width: 50px;
+}
+.booking-car-section .thank-you-page .cs-thank-you-card {
+  margin: auto;
+  min-height: 450px;
+  height: 50vh;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.booking-car-section .thank-you-page .cs-thank-you-card .image-wrapper {
+  margin-bottom: 1rem;
+}
+.booking-car-section .thank-you-page .cs-thank-you-card .image-wrapper svg {
+  width: 80px;
+  height: 80px;
+}
+.booking-car-section .thank-you-page .cs-thank-you-card .content-wrapper {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.booking-car-section .thank-you-page .cs-thank-you-card .content-wrapper p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.booking-car-section .thank-you-page .cs-thank-you-card .button-wrapper {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.booking-car-section .thank-you-page .cs-thank-you-card .button-wrapper .cs-primary-button {
+  max-width: 250px;
+}
+
+.row_guests_and_cars {
+  margin-top: 40px;
+}
+
+.row_first {
+  margin-top: 20px;
+}
+
+.coupon_wrap .cs-field {
+  margin-bottom: 0px;
+}
+
+.coupon_wrap .cs-field label {
+  margin-bottom: 0;
+}
+
+.coupon_wrap button {
+  height: 52px;
+  background-color: #000;
+  color: white;
+}
+
+.coupon_wrap button:hover {
+  border: 1px solid #000;
+  color: black;
+  background-color: transparent;
+}
+
+.cs_coupon_applied {
+  background-color: #7cfc00 !important;
+  color: #000 !important;
+}
+
+.cs-coupon-success,
+.cs-coupon-invalid {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #2bc48a;
+  max-height: 60px;
+  justify-content: space-between;
+}
+.cs-coupon-success .cs-coupon-left,
+.cs-coupon-invalid .cs-coupon-left {
+  display: flex;
+  align-items: center;
+}
+.cs-coupon-success .cs-coupon-left .icon-wrapper,
+.cs-coupon-invalid .cs-coupon-left .icon-wrapper {
+  margin: 0 1rem;
+}
+.cs-coupon-success .cs-coupon-left .icon-wrapper svg,
+.cs-coupon-invalid .cs-coupon-left .icon-wrapper svg {
+  width: 30px;
+  height: 30px;
+}
+.cs-coupon-success .cs-coupon-left .content-wrapper,
+.cs-coupon-invalid .cs-coupon-left .content-wrapper {
+  padding-right: 3rem;
+}
+.cs-coupon-success .cs-coupon-left .content-wrapper p,
+.cs-coupon-invalid .cs-coupon-left .content-wrapper p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.cs-coupon-success .cs-coupon-left .content-wrapper p span,
+.cs-coupon-invalid .cs-coupon-left .content-wrapper p span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.cs-coupon-success .cs-coupon-left .content-wrapper p:last-child,
+.cs-coupon-invalid .cs-coupon-left .content-wrapper p:last-child {
+  font-size: 14px;
+}
+.cs-coupon-success .cs-coupon-left .content-wrapper p:last-child span,
+.cs-coupon-invalid .cs-coupon-left .content-wrapper p:last-child span {
+  font-size: 14px;
+}
+
+table.tbl-booking-summary {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tbl-booking-summary td,
+.tbl-booking-summary th {
+  border: 1px solid #f6f6f6;
+  text-align: left;
+  padding: 12px 20px;
+}
+
+.tbl-booking-summary tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+.tbl-booking-summary th {
+  color: white;
+  background-color: black;
+}
+
+.payment-wrap label {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.cs-custom-select {
+  border-color: black;
+  border-radius: initial;
+}
+
+.para_car_available {
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.btn_wrap {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+.btn_wrap button {
+  margin-top: 20px;
+}
+
+.cs_black_heading {
+  color: black;
+  padding: 15px 0px;
+  text-align: left !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+}
+
+.booking-car-section {
+  width: 95%;
+  margin: auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.cs-coupon-invalid {
+  border-color: red;
+}
+.cs-coupon-invalid .cs-coupon-left .content-wrapper p {
+  color: red !important;
+  font-size: 16px !important;
+}
+.cs-coupon-invalid .cs-coupon-left .content-wrapper p span {
+  font-size: 18px !important;
+}
+
+.cs-car .card_wrap {
+  padding: 30px 25px;
+  border-radius: 0;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid black;
+}
+.cs-car .card_wrap:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.protection_wrap {
+  display: flex;
+  gap: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 30px 20px;
+  flex-direction: column;
+  text-align: center;
+}
+.protection_wrap img {
+  max-width: initial !important;
+  width: 120px;
+}
+
+.template-protection label {
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+.template-protection label .cost {
+  font-size: 28px;
+}
+.template-protection .protection-row label:hover {
+  border: 1px solid black;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.template-protection input[type=radio]:checked + label {
+  border: 1px solid black;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.cs-button-outline {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  padding: 0.8rem 1.5rem;
+}
+.cs-button-outline:hover {
+  background-color: transparent;
+}
+
+.desc_wrap p {
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.template-protection h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  position: relative;
+}
+.template-protection .sub_head {
+  max-width: 500px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -15px;
+  margin-bottom: 4rem;
+}
+
+.checkbox-wrap input {
+  width: auto !important;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.checkbox-wrap label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cs-arrow-circle {
+  padding: 16px;
+  border: none;
+  font-size: 1rem;
+  min-width: 40px;
+  width: 80px !important;
+  background: black;
+}
+.cs-arrow-circle:hover {
+  background-color: black;
+}
+
+.booking-details-form .booking-title-wrap {
+  margin-top: 40px;
+}
+.booking-details-form .date-title {
+  font-weight: 600;
+}
+.booking-details-form .cs-location-wrap {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 40px;
+  padding: 0;
+  overflow: hidden;
+}
+.booking-details-form .cs-location-wrap .img-wrap {
+  background-color: #d3eaf9;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 40px;
+}
+.booking-details-form .cs-location-wrap .img-wrap img {
+  width: 75%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.booking-details-form .cs-location-wrap .desc-wrap {
+  padding: 20px 30px;
+}
+.booking-details-form .cs-location-wrap .desc-wrap .cs-title {
+  font-weight: bold;
+  font-size: 22px;
+}
+.booking-details-form .cs-location-wrap .desc-wrap p {
+  line-height: 1;
+}
+.booking-details-form .cs-location-wrap .desc-wrap .cs-address {
+  color: rgba(0, 0, 0, 0.6);
+}
+.booking-details-form .cs-location-wrap .desc-wrap .cs-car {
+  font-size: 18px;
+}
+
+.cs-car-detail span {
+  font-size: 16px;
+}
+.cs-car-detail .sp {
+  border-right: 1px solid rgba(0, 0, 0, 0.6);
+  margin-right: 12px;
+  padding-right: 12px;
+}
+
+.cs_black_heading {
+  margin-bottom: 5px !important;
+}
+
+.summary-card {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.pickup-wrap .location i {
+  margin-right: 7px;
+}
+
+.drop-wrap .location i {
+  margin-right: 7px;
+}
+
+#secPayment .container {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.cs-car-detail {
+  margin-top: 20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+.cs-car-detail .elem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.cs-car-detail svg {
+  width: 23px;
+  text-align: center;
+}
+
+.cs-car-detail {
+  display: flex;
+}
+
+.time-slot-col {
+  position: relative;
+}
+
+.time-slots-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 50%;
+  z-index: 10;
+  padding: 15px 10px;
+  border-radius: 5px;
+  overflow: scroll;
+  max-height: 300px;
+}
+.time-slots-wrap .time-wrap {
+  padding: 4px;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: #fafafa;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(50% - 10px);
+  margin: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.total-price {
+  font-weight: bold;
+}
+
+.cs-field-country-code {
+  border: 1px solid black;
+  padding: 5px 2px;
+}
+
+.sec-payment {
+  padding: 10px 10px;
+}
+
+.sec-payment .container .title {
+  font-weight: bold;
+}
+
+.title-driver {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.col-content {
+  margin-bottom: 20px;
+}
+
+.booking-payment {
+  margin-top: 20px;
+}
+
+.checkbox-wrapper-33 {
+  margin-top: 7px;
+}
+
+.cs-higlighted {
+  color: #f86f15 !important;
+  font-size: 20px !important;
+}
+
+.protection-included {
+  color: #f86f15 !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+
+.cs-title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cs-wrap-back i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fa-charging-station {
+  font-size: 20px;
+}
+
+.plan-content {
+  font-style: initial;
+}
+
+#cs_page_TemplateCar .cs-title-wrap {
+  max-width: 550px;
+  margin: auto;
+}
+
+.cs-text-mini {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+/**
+*	Code for mobile devices
+*/
+@media (max-width: 768px) {
+  .sec-payment .basic-plan {
+    padding-bottom: 0;
+  }
+  .sec-payment .plans {
+    padding: 0;
+    margin: 0;
+  }
+  .sec-driver {
+    padding: 0 10px;
+    margin-bottom: 1.5rem;
+  }
+  #secDriver .col-md-5 {
+    padding: 0 !important;
+  }
+  .protection-row {
+    flex-direction: column;
+    padding: 10px 25px;
+  }
+  .summary-wrap {
+    padding: 0px 25px;
+  }
+  .summary-card {
+    padding: 20px 20px 30px 20px;
+  }
+  .wrap-car-detail span {
+    display: none;
+  }
+  .sec-payment .cs-body {
+    padding: 10px 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .booking-car-section .booking-details-form h4 span {
+    font-size: 24px;
+  }
+  .booking-car-section .booking-details-form h4 i {
+    font-size: 1.3rem;
+  }
+  .sec-payment .cs-body {
+    padding: 0 10px;
+  }
+  .cs-car-detail span {
+    font-size: 10px;
+  }
+  .cs-car-detail svg {
+    width: 20px;
+  }
+  .fa-charging-station {
+    font-size: 17px;
+  }
+  .cs-location-wrap .desc-wrap {
+    margin-bottom: 10px;
+  }
+  .booking-details-form .cs-location-wrap .desc-wrap .cs-title {
+    font-size: 20px;
+  }
+  .template-car-btns .col-md-12 {
+    margin-bottom: 1.5rem;
+  }
+  .summary-wrap {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  #SummaryWrap .desc-wrap {
+    padding: 0;
+  }
+  .title-template-protection {
+    font-size: 1.7rem;
+  }
+  .cs-title-wrap {
+    margin-bottom: 15px;
+  }
+  #summaryLeft {
+    position: initial;
+  }
+  .cs-thank-you-card h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+.dates-bg {
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.text-disclaimer {
+  font-size: 14px !important;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 30px;
+}/*# sourceMappingURL=booking-car.css.map */
